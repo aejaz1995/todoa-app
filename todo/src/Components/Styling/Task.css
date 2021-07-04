@@ -1,0 +1,117 @@
+.header {
+	width: 80%;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: whitesmoke;
+	margin-left: 10%;
+	margin-top: 2%;
+	display: flex;
+	justify-content: space-between;
+	font: 500;
+	font-size: 22px;
+	opacity: .9;
+	font-weight: 600;
+}
+
+.date {
+	text-align: right;
+	margin-right: 30px;
+	color: black;
+}
+.taskTitle {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	margin-left: 10%;
+	color:black;
+	/* border:1px solid black; */
+}
+.taskTitle > h1{
+	font-size: 25px;
+}
+.taskTitle > h1::before{
+	content:"Title: ";
+	color:red;
+	font-weight: bold;
+}
+.des {
+	color: white;
+	max-width: 400px;
+	text-align: left;
+	margin-right: 50px;
+	font-size: 23px;
+	/* border:1px solid red; */
+	/* overflow:scroll; */
+	/* padding: 10px; */
+	color: black;
+}
+.des::before{
+	content:" Description: ";
+	color:red;
+	font-weight: bold;
+}
+.tag {
+	margin-left: 10px;
+}
+.fieldset {
+	width: 40%;
+	margin-left: 10%;
+	background: #fccc;
+	box-shadow: 0 0 10px #fccc;
+	/* opacity: .9; */
+	text-align: left;
+	border:none;
+}
+.sub-task {
+	display: flex;
+	justify-content: left;
+	width: fit-content;
+	margin: 10px auto;
+	width: 90%;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background: whitesmoke;
+	font: 500;
+	font-size: 20px;
+	/* opacity: .9; */
+}
+.sub-task div {
+	margin: 0 10px;
+}
+
+.subtaskEditor {
+	display: none;
+	width: 100px;
+	margin-left: 10px;
+	justify-content: center;
+	position: relative;
+	z-index: 10;
+}
+.subtaskEditor i {
+	/* margin-left: 10px; */
+	margin-right: 10px;
+}
+.sub-task:hover .subtaskEditor,
+.taskTitle:hover .subtaskEditor {
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.add-Button {
+	width: fit-content;
+	padding: 10px 20px;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	border-radius: 25px;
+	color: white;
+	font-size: 20px;
+	background: #3333eb;
+	cursor: pointer;
+	box-shadow: 0 0 10px black;
+}
+.add-Button:hover {
+	background-color: #16168d;
+}

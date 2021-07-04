@@ -1,0 +1,19 @@
+/** @format */
+body {
+	background-color: white;
+	
+}
+.App {
+	text-align: center;
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+h5 {
+	width: 200px;
+	text-align: left;
+	text-shadow: lawngreen;
+	font-size: 18px;
+}
