@@ -87,13 +87,13 @@ const userData = (userDetails) => {
 }
 export { login_request, login_success, login_failure, login_auth, isLogOut, userData };
 
-export const login = (username, password) => async dispatch => {
+export const login = (email, password) => async dispatch => {
     try {
-        const res = await axios.post('https://masai-api-mocker.herokuapp.com/auth/login', {
+        const res = await axios.post('http://localhost:8000/login', {
             password,
-            username
+            email
         });
-        dispatch(login_success(res.data, username));
+        dispatch(login_success(res.data, email));
         dispatch(login_auth(true));
         return {
             success: true

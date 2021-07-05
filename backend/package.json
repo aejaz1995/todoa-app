@@ -1,18 +1,20 @@
 {
-  "name": "backend",
+  "name": "todo-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "server": "nodemon src/server"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "mongoose": "^5.12.15",
-    "nodemon": "^2.0.7"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.1",
+    "nodemon": "^2.0.9"
   }
 }
